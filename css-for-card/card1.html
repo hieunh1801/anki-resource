@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #e7e7e7;
+        padding: 10px 30px;
+    }
+    #card-container {
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)!important;
+        background-color: white;
+        color: black;
+        width: fit-content;
+    } 
+    #card-image {
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #card-content {
+        padding: 10px 20px;
+    }
+</style>
+
+<body>
+    <div id="card-container">
+        <div id="card-image">
+            <img src="https://kenh14cdn.com/thumb_w/660/2020/9/11/640-1599835652901151849424.jpg" alt="Italian Trulli">
+        </div>
+        <div id="card-content">
+            <div id="word-container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        {{word_kanji}}
+                    </div>
+                    <div>
+                        {{word_hiragana}}
+                    </div>
+                </div>
+               <div style="text-align: center; padding: 10px; font-size: 24px;">
+                {{word_vietnamese}}
+               </div>
+            </div>
+            <div id="sentence-container">
+                <div style="margin-bottom: 10px;">
+                    {{sentence_kanji}}
+                </div>
+                <div style="margin-bottom: 10px;">
+                    {{sentence_hiragana}}
+                </div>
+                <div style="margin-bottom: 10px;">
+                    {{sentence_vietnamese}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
